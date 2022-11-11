@@ -1,5 +1,5 @@
 # from transformers import pipeline
-# import torch
+import torch
 from sentence_transformers import SentenceTransformer
 # Init is ran on server startup
 # Load your model to GPU as a global variable here using the variable name "model"
