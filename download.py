@@ -11,3 +11,13 @@
 
 # if __name__ == "__main__":
 #    download_model()
+
+
+from transformers import pipeline
+
+def download_model():
+    # do a dry run of loading the huggingface model, which will download weights
+    SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
+
+if __name__ == "__main__":
+    download_model()
