@@ -13,7 +13,7 @@
 #    download_model()
 
 
-from transformers import pipeline
+from sentence_transformers import SentenceTransformer
 
 def download_model():
     # do a dry run of loading the huggingface model, which will download weights
