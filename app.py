@@ -21,7 +21,7 @@ def inference(model_inputs:dict) -> dict:
         return {'message': "No prompt provided"}
     
     # Run the model
-    result = model.encode(texts).tolist()
+    result = model.encode(prompt).tolist()
     # result = model(prompt)
 
     # Return the results as a dictionary
