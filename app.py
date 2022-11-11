@@ -7,7 +7,7 @@ def init():
     global model
     
     device = 0 if torch.cuda.is_available() else -1
-    model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
+    model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2', device=device)
     # model = pipeline('fill-mask', model='bert-base-uncased', device=device)
 
 # Inference is ran for every server call
